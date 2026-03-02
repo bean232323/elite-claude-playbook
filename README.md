@@ -16,7 +16,8 @@ elite-claude-playbook/
 │   ├── project-audit/         # Score your setup out of 100
 │   ├── design-system/         # UI/styling standards
 │   ├── api-patterns/          # API route conventions
-│   └── content-writer/        # Marketing & content creation
+│   ├── content-writer/        # Marketing & content creation
+│   └── migration-guide/       # Safe database migration workflow
 ├── commands/                  # Slash command templates
 │   ├── catchup.md             # Session start status report
 │   ├── deploy-check.md        # Pre-deploy verification
@@ -128,6 +129,12 @@ Auto-loads when creating or modifying API routes. Enforces a strict route struct
 Auto-loads for marketing and content tasks. Provides templates for blog posts, LinkedIn posts, and email newsletters with platform-specific formatting, SEO optimization, and CTA requirements.
 
 [Full skill file →](skills/content-writer/SKILL.md)
+
+### Migration Guide
+
+Auto-loads when you're working on database schema changes. Provides a full step-by-step workflow: check existing schema → create migration → write SQL → update ORM → test → deploy → verify. Includes common patterns for adding columns, enum values, junction tables, and indexes. Enforces RLS on new tables, idempotent SQL, and never modifying committed migrations.
+
+[Full skill file →](skills/migration-guide/SKILL.md)
 
 ---
 
